@@ -1,10 +1,9 @@
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    Recipe Loft
+      Recipe Loft
     </div>
   );
 }
