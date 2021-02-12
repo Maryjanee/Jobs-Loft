@@ -1,7 +1,7 @@
 const Header = () => (
   <header>
     <div className="container">
-      <h1>Meals Loft</h1>
+      <h1>Job Loft</h1>
     </div>
   </header>
 );

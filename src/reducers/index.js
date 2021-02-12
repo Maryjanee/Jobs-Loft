@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import mealReducer from './meals';
+import jobReducer from './jobs';
 
 const rootReducer = combineReducers({
-  mealReducer,
+  jobReducer,
 });
 
 export default rootReducer;
