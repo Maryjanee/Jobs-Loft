@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import JobList from '../containers/JobList';
-import Job from '../containers/Jobs';
+import Job from '../containers/Job';
 import Header from './Header';
 import { fetchJobs } from '../actions';
 import CategoryFilter from './CategoryFilter';
@@ -20,7 +20,7 @@ const App = ({ fetchJobs }) => {
       <CategoryFilter />
       <Switch>
         <Route path="/" exact component={JobList} />
-        <Route path="/job/:job" component={Job} />
+        <Route path="/job/:jobId" component={Job} />
         <Redirect to="/" />
       </Switch>
     </div>

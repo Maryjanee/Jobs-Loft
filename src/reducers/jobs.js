@@ -11,7 +11,6 @@ const jobsReducer = (state = initialState, action) => {
     case GET_JOBS_REQUEST:
       return { ...state, pending: true };
     case GET_JOBS_SUCCESS:
-      console.log(action.payload);
       return {
         ...state, pending: false, jobs: action.payload, error: '',
       };
