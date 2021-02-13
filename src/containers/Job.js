@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-// TODO: bring in pending
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useEffect, useState } from 'react';
+import loader from '../assets/5.gif';
 
-const Job = ({ jobs }) => {
+const Job = ({ jobs, pending }) => {
   const { jobId } = useParams();
   const [job, setJob] = useState();
 
@@ -15,9 +15,16 @@ const Job = ({ jobs }) => {
       setJob(matchedJob);
     }
   }, [jobs]);
-  return job && (
+  return (
     <div>
-      {job.title}
+      {pending && <img src={loader} alt="loader" />}
+      {job && (
+      <div>
+        {job.title}
+        {<span dangerouslySetInnerHTML={{ __html: job.description }} />}
+      </div>
+      )}
+
     </div>
   );
 };
@@ -25,6 +32,7 @@ const Job = ({ jobs }) => {
 const mapStateToProps = state => (
   {
     jobs: state.jobReducer.jobs,
+    pending: state.jobReducer.pending,
   }
 );
 
