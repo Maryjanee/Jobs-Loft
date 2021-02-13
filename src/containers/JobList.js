@@ -3,17 +3,24 @@
 /* eslint-disable no-nested-ternary */
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import loader from '../assets/5.gif';
 
-const JobList = ({ jobs, error, pending }) => (
+const JobList = ({
+  jobs, error, pending, categories,
+}) => (
   <div>
     <h2>Job List</h2>
+
     <div>
-      {pending && <h2>Loading</h2>}
+      {pending && <img src={loader} alt="loader" />}
       {!pending && error && <h3>{error}</h3>}
       {!pending && !error && jobs.map(job => (
         <Link to={`job/${job.id}`} key={job.id}>
-          <p>{job.title}</p>
-          {/* <span dangerouslySetInnerHTML={{ __html: job.description }} /> */}
+          <div>
+            <p>{job.title}</p>
+
+          </div>
+
         </Link>
       ))}
     </div>
@@ -24,6 +31,7 @@ const mapStateToProps = state => ({
   jobs: state.jobReducer.jobs,
   pending: state.jobReducer.pending,
   error: state.jobReducer.error,
+  categories: state.jobReducer.categories,
 });
 
 export default connect(mapStateToProps)(JobList);
