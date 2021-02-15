@@ -26,37 +26,36 @@ const JobList = ({
       {!pending && error && <h3>{error}</h3>}
       {!pending && !error && jobs.map(job => (
         <Link to={`job/${job.id}`} key={job.id}>
-          <div className="container">
-            <div className="card-container d-grid">
 
-              <div className="job-details d-grid">
+          <div className="card-container d-grid">
 
-                <div className="company-logo">
-                  <img src={job.company_logo} alt="logo" />
-                </div>
-                <div className="company-info">
-                  <p className="job-title">{job.title}</p>
-                  <p className="company-name">{job.company}</p>
-                  <p className="location capsule">{job.location}</p>
+            <div className="job-details d-grid">
 
-                </div>
-
+              <div className="company-logo">
+                <img src={job.company_logo} alt="logo" />
               </div>
+              <div className="company-info">
+                <p className="job-title">{job.title}</p>
+                <p className="company-name">{job.company}</p>
+                <p className="location capsule">{job.location}</p>
 
-              <div className="tags d-flex">
-                <p className="capsule">Javascript</p>
-                <p className="capsule">React</p>
-                <p className="capsule">C#</p>
-                <p className="capsule">Rails</p>
-                <p className="capsule">SQL</p>
-              </div>
-
-              <div className="d-flex last-details">
-                <p className="job-tag capsule">Software Development</p>
-                <p className="created-at">2d</p>
               </div>
 
             </div>
+
+            <div className="tags d-flex">
+              <p className="capsule">Javascript</p>
+              <p className="capsule">React</p>
+              <p className="capsule">C#</p>
+              <p className="capsule">Rails</p>
+              <p className="capsule">SQL</p>
+            </div>
+
+            <div className="d-flex last-details">
+              <p className="job-tag capsule">Software Development</p>
+              <p className="created-at">2d</p>
+            </div>
+
           </div>
 
         </Link>
