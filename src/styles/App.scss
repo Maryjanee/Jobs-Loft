@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&display=swap');
+
+:root{
+    --black:#000;
+    --white: #fff;
+    --btn-red: #FF385C;
+
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
 }
 
 .container{
@@ -9,7 +19,139 @@
     width:90%;
 }
 
+img{
+    width:100%;
+}
+
+.capsule{
+    background: #DFE0E1;
+    border-radius: .6rem;
+    width: max-content;
+    padding: .35rem .8rem;
+    margin-right:1rem;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center{
+    margin:3rem auto;
+    width:150px;
+    display:block
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .d-flex{
     display: flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+
+nav{
+    padding:1.5rem 0;
+    background: var(--black);
+    height:120px;
+
+    h1{
+        color:var(--white);
+        font-size: 3rem;
+    }
+    li {
+        a{
+            color:var(--white);
+            font-size:1.5rem;
+            background: #FF385C;
+            padding:1rem 3.5rem;
+            border-radius:2rem;
+        }
+
+    }
+
+    
+}
+
+h2{
+    font-size: 3rem;
+}
+
+select{
+    width:25rem;
+    padding:1rem 1.5rem;
+    border-radius: 1.5rem;
+    border:3px solid blue;
+    outline: none;
+    option{
+        font-size: 1rem;
+    }
+}
+
+.card-container{
+    width:100%;
+    height:auto;
+    border-radius: 1.8rem;
+    background: var(--white);
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-gap:2rem;
+    padding:1rem 1.5rem;
+    margin: 3rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    .job-details{
+     grid-template-columns: 1fr 4fr;
+     grid-gap:1rem;
+
+     .company-logo{
+      height: 50px;
+      margin:2rem 0;
+     }
+
+     .company-info{
+         *{
+             margin-bottom:1rem;
+         }
+        .job-title{
+            font-size: 1.5rem;
+            font-weight: 400;
+          }
+          p{
+              font-size:1.2rem;
+          }
+
+          .location{
+              background: #DFE0E1;
+            
+          }
+
+     }
+     
+    }
+    .tags{
+       align-items: center;
+       p{
+         background:none;  
+         border:1px solid #59626C;
+         color:#59626C
+       }
+     }
+     .last-details{
+      align-items: center;
+     }
+     .job-tag{
+         background:#59626C;
+         color:var(--white)
+     }
+    
 }
 

@@ -7,7 +7,6 @@ import JobList from '../containers/JobList';
 import Job from '../containers/Job';
 import Header from './Header';
 import { fetchJobs } from '../actions';
-import CategoryFilter from './CategoryFilter';
 
 const App = ({ fetchJobs }) => {
   useEffect(() => {
@@ -17,7 +16,7 @@ const App = ({ fetchJobs }) => {
   return (
     <div className="App">
       <Header />
-      <CategoryFilter />
+
       <Switch>
         <Route path="/" exact component={JobList} />
         <Route path="/job/:jobId" component={Job} />
@@ -31,6 +30,7 @@ const mapDispatchToProps = dispatch => (
   {
     fetchJobs: () => dispatch(fetchJobs()),
   }
+
 );
 
 export default connect(null, mapDispatchToProps)(App);

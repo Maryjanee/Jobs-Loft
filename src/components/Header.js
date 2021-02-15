@@ -1,9 +1,13 @@
 const Header = () => (
-  <header>
-    <div className="container">
+  <nav>
+    <div className="container d-flex align-center">
       <h1>Job Loft</h1>
+      <li>
+        <a href="#job-list">Jobs</a>
+      </li>
     </div>
-  </header>
+  </nav>
+
 );
 
 export default Header;
