@@ -1,6 +1,6 @@
 import jobsReducer from './jobs'
 import {
-    GET_JOBS_ERROR, GET_JOBS_SUCCESS, GET_JOBS_REQUEST, FILTER_JOB_TYPES,
+ GET_JOBS_SUCCESS, FILTER_JOB_TYPES,
   } from '../types';
 import filterReducer from './filter';
 
@@ -57,7 +57,7 @@ const initialState = {
         expect(newState).toEqual( {
             pending:false,
             jobs:[...job],
-            error:"",
+            error:""
         })
        })
 });

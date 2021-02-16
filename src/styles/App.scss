@@ -1,219 +1,220 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
-:root{
-    --black:#000;
-    --white: #fff;
-    --btn-red: #FF385C;
-
+:root {
+  --black: #000;
+  --white: #fff;
+  --btn-red: #ff385c;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.container{
-    margin:0 auto;
-    width:90%;
+.container {
+  margin: 0 auto;
+  width: 90%;
 }
 
-.back{
-  color: #041515;  
-  font-size:1.4rem;
-  margin:3rem 0;
+.back {
+  color: #041515;
+  font-size: 1.4rem;
+  margin: 3rem 0;
 }
 
-#arrow{
-    width:1.4rem;
+#arrow {
+  width: 1.4rem;
 }
 
-img{
-    width:100%;
+img {
+  width: 100%;
 }
 
-.m-1{
-    margin-top:3rem;
-    margin-bottom:3rem;
+.m-1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.capsule{
-    background: #DFE0E1;
-    border-radius: .6rem;
-    width: max-content;
-    padding: .35rem .8rem;
-    margin-right:1rem;
+.capsule {
+  background: #dfe0e1;
+  border-radius: 0.6rem;
+  width: max-content;
+  padding: 0.35rem 0.8rem;
+  margin-right: 1rem;
 }
 
 .align-center {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.center{
-    margin:3rem auto;
-    width:20rem;
-    display:block;
-    
+.center {
+  margin: 3rem auto;
+  width: 20rem;
+  display: block;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-.d-grid{
-    display: grid;
+.d-grid {
+  display: grid;
 }
 
-h3{
-    font-size:2rem;
+h3 {
+  font-size: 2rem;
 }
 
+nav {
+  padding: 1.5rem 0;
+  background: var(--black);
+  height: 120px;
 
-nav{
-    padding:1.5rem 0;
-    background: var(--black);
-    height:120px;
-
-    h1{
-        color:var(--white);
-        font-size: 3rem;
-    }
-    li {
-        a{
-            color:var(--white);
-            font-size:1.5rem;
-            background: #FF385C;
-            padding:1rem 3.5rem;
-            border-radius:2rem;
-        }
-
-    }
-
-    
-}
-
-h2{
-    font-size: 3rem;
-}
-
-select{
-    width:25rem;
-    font-size: 1.3rem;
-    padding:1rem 1.5rem;
-    border:3px solid blue;
-    cursor: pointer;
-    border:0px;
-   outline:0px;
-   box-shadow: 2px 2px 8px #999;
-   
-
-    option{
-        font-size: 1.3rem;
-        border-radius: 1.5rem;
-    }
-}
-
-.card-container{
-    width:100%;
-    height:auto;
-    border-radius: 1.8rem;
-    background: var(--white);
-    grid-template-columns: 2fr 3fr 1fr;
-    grid-gap:2rem;
-    padding:3rem 2.5rem;
-    margin: 1.5rem 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
-    .job-details{
-     grid-template-columns: 1fr 4fr;
-     grid-gap:1rem;
-
-     .company-logo{
-      height: 50px;
-      margin:2rem 0;
-     }
-
-     .company-info{
-         *{
-             margin-bottom:1rem;
-         }
-        .job-title{
-            font-size: 1.5rem;
-            font-weight: 400;
-          }
-          p{
-              font-size:1.2rem;
-          }
-
-          .location{
-              background: #DFE0E1;
-            
-          }
-
-     }
-     
-    }
-    .tags{
-       align-items: center;
-       p{
-         background:none;  
-         border:1px solid #59626C;
-         color:#59626C
-       }
-     }
-     .last-details{
-      align-items: center;
-     }
-     .job-tag{
-         background:#59626C;
-         color:var(--white)
-     }
-    }
-.single-details{
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 4rem;
-    margin-top:3rem;
-}
-
-.single-job-title{
-    font-size:7rem;
-   
-}
-
-#apply-btn{
-    background: blue;
+  h1 {
     color: var(--white);
-    width:100%;
-    padding:1.5rem;
-    border-radius: .7rem;
-    border: 0;
-    display: block;
-    text-align: center;
+    font-size: 3rem;
+  }
+
+  li {
+    a {
+      color: var(--white);
+      font-size: 1.5rem;
+      background: #ff385c;
+      padding: 1rem 3.5rem;
+      border-radius: 2rem;
+    }
+  }
 }
 
+h2 {
+  font-size: 3rem;
+}
 
-.more-info{
-    *{
-        font-size:1.3rem;
+select {
+  width: 25rem;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  box-shadow: 2px 2px 8px #999;
+
+  option {
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.card-container {
+  width: 100%;
+  height: auto;
+  border-radius: 1.8rem;
+  background: var(--white);
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-gap: 2rem;
+  padding: 3rem 2.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+  .job-details {
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1rem;
+
+    .company-logo {
+      height: 50px;
+      margin: 2rem 0;
     }
-    p{
-        margin:1.5rem 0;
+
+    .tags {
+      align-items: center;
+
+      p {
+        background: none;
+        border: 1px solid #59626c;
+        color: #59626c;
+      }
     }
-    h2{
+
+    .more-info {
+      * {
+        font-size: 1.3rem;
+      }
+
+      p {
+        margin: 1.5rem 0;
+      }
+
+      h2 {
         font-size: 3rem;
+      }
     }
+
+
+
+
+    .company-info {
+      * {
+        margin-bottom: 1rem;
+      }
+
+      .job-title {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .location {
+        background: #dfe0e1;
+      }
+    }
+  }
+
+
+  .last-details {
+    align-items: center;
+  }
+
+  .job-tag {
+    background: #59626c;
+    color: var(--white);
+  }
 }
 
-.uppercase{
-    text-transform: uppercase;
+.single-details {
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 4rem;
+  margin-top: 3rem;
+}
+
+.single-job-title {
+  font-size: 7rem;
+}
+
+#apply-btn {
+  background: blue;
+  color: var(--white);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  border: 0;
+  display: block;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
