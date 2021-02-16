@@ -26,7 +26,6 @@ export const fetchJobs = () => async dispatch => {
   dispatch(getJobsRequest());
   try {
     const { data: jobs } = await jobService.getJobs();
-    console.log('jobs', jobs);
     dispatch(getJobsSuccess(jobs));
   } catch (error) {
     const errorMsg = error.message;

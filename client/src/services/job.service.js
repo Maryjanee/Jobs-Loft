@@ -1,7 +1,5 @@
 import axios from './axios';
 
-const token = process.env.REACT_APP_AUTH_TOKEN;
-
 class JobService {
   // eslint-disable-next-line class-methods-use-this
   async getJobs() {
