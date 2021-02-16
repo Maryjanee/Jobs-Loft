@@ -73,6 +73,10 @@ a{
     display: grid;
 }
 
+h3{
+    font-size:2rem;
+}
+
 
 nav{
     padding:1.5rem 0;
@@ -102,6 +106,7 @@ h2{
 }
 
 select{
+    appearance: none;
     width:25rem;
     padding:1rem 1.5rem;
     border-radius: 1.5rem;
@@ -109,6 +114,7 @@ select{
     outline: none;
     option{
         font-size: 1rem;
+        border-radius: 1.5rem;
     }
 }
 
