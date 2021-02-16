@@ -1,9 +1,7 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable max-len */
-/* eslint-disable no-nested-ternary */
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import loader from '../assets/loading.svg';
 import { filterJobTypes } from '../actions/job.action';
 import JobTypeFilter from '../components/JobTypeFilter';
@@ -92,5 +90,17 @@ const mapDispatchToProps = dispatch => ({
   handleFilterChange: category => dispatch(filterJobTypes(category)),
 
 });
+
+JobList.defaultProps = {
+  error: null,
+};
+
+JobList.propTypes = {
+  jobs: PropTypes.instanceOf(Array).isRequired,
+  pending: PropTypes.bool.isRequired,
+  handleFilterChange: PropTypes.func.isRequired,
+  error: PropTypes.string,
+  filter: PropTypes.string.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(JobList);

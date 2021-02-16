@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 
 import { useParams, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -64,5 +64,10 @@ const mapStateToProps = state => (
     pending: state.jobReducer.pending,
   }
 );
+
+Job.propTypes = {
+  jobs: PropTypes.instanceOf(Array).isRequired,
+  pending: PropTypes.bool.isRequired,
+};
 
 export default connect(mapStateToProps)(Job);
