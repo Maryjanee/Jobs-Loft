@@ -6,7 +6,7 @@
  
 
 ## Live Link
-   [See it live here](https://maryjane-bookstore.herokuapp.com/)
+   [See it live here](https://job-loft.herokuapp.com/)
 
 
 ## Built With
