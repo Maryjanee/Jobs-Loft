@@ -3,7 +3,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useEffect, useState } from 'react';
-import loader from '../assets/5.gif';
+import loader from '../assets/loading.svg';
 import back from '../assets/back.svg';
 
 const Job = ({ jobs, pending }) => {
@@ -23,7 +23,7 @@ const Job = ({ jobs, pending }) => {
         Back to all Jobs
       </Link>
       <div>
-        {pending && <img src={loader} alt="loader" />}
+        {pending && <img src={loader} className="center" alt="loader" />}
         {job && (
         <div className="single-details d-grid more-info">
           <div className="more-info">
@@ -31,7 +31,9 @@ const Job = ({ jobs, pending }) => {
             <span dangerouslySetInnerHTML={{ __html: job.description }} />
           </div>
           <div className="single-job-info">
-            <button type="button" id="apply-btn">Apply Now</button>
+            <a href={job.company_url} id="apply-btn" target="_blank" rel="noreferrer">
+              Company Website
+            </a>
             <div>
               <div>
                 <p className="uppercase">Location</p>

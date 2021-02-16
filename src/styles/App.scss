@@ -53,8 +53,9 @@ img{
 
 .center{
     margin:3rem auto;
-    width:150px;
-    display:block
+    width:20rem;
+    display:block;
+    
 }
 
 li{
@@ -106,14 +107,18 @@ h2{
 }
 
 select{
-    appearance: none;
     width:25rem;
+    font-size: 1.3rem;
     padding:1rem 1.5rem;
-    border-radius: 1.5rem;
     border:3px solid blue;
-    outline: none;
+    cursor: pointer;
+    border:0px;
+   outline:0px;
+   box-shadow: 2px 2px 8px #999;
+   
+
     option{
-        font-size: 1rem;
+        font-size: 1.3rem;
         border-radius: 1.5rem;
     }
 }
@@ -189,9 +194,11 @@ select{
     background: blue;
     color: var(--white);
     width:100%;
-    padding:1rem 1.5rem;
+    padding:1.5rem;
     border-radius: .7rem;
     border: 0;
+    display: block;
+    text-align: center;
 }
 
 

@@ -4,7 +4,7 @@
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import loader from '../assets/5.gif';
+import loader from '../assets/loading.svg';
 import { filterJobTypes } from '../actions/job.action';
 import JobTypeFilter from '../components/JobTypeFilter';
 import daysDiff from '../helpers/daysDiff';

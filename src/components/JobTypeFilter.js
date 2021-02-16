@@ -15,21 +15,18 @@ const JobTypeFilter = ({ handleFilterChange }) => {
 
   return (
     <div>
-      <label htmlFor="jobType">
-        Select a Job Type
-        <select
-          name="jobType"
-          id="jobType"
-          onChange={handleChange}
-        >
-          <option value="">All</option>
-          {jobTypes.map(jobType => (
-            <option key={jobType} value={jobType}>
-              {jobType}
-            </option>
-          ))}
-        </select>
-      </label>
+      <select
+        name="jobType"
+        id="jobType"
+        onChange={handleChange}
+      >
+        <option value="">Select a Job Type</option>
+        {jobTypes.map(jobType => (
+          <option key={jobType} value={jobType}>
+            {jobType}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

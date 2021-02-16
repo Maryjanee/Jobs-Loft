@@ -1,5 +1,7 @@
 import axios from 'axios';
-import { GET_JOBS_ERROR, GET_JOBS_SUCCESS, GET_JOBS_REQUEST } from '../types';
+import {
+  GET_JOBS_ERROR, GET_JOBS_SUCCESS, GET_JOBS_REQUEST, FILTER_JOB_TYPES,
+} from '../types';
 
 export const getJobsRequest = () => ({
   type: GET_JOBS_REQUEST,
@@ -13,6 +15,11 @@ export const getJobsSuccess = jobs => ({
 export const getJobsError = error => ({
   type: GET_JOBS_ERROR,
   payload: error,
+});
+
+export const filterJobTypes = jobType => ({
+  type: FILTER_JOB_TYPES,
+  payload: jobType,
 });
 
 export const fetchJobs = () => dispatch => {
