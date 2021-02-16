@@ -25,7 +25,7 @@ const Job = ({ jobs, pending }) => {
       <div>
         {pending && <img src={loader} className="center" alt="loader" />}
         {job && (
-        <div className="single-details d-grid more-info">
+        <div className="single-details d-grid">
           <div className="more-info">
             <h2 className="single-job-title">{job.title}</h2>
             <span dangerouslySetInnerHTML={{ __html: job.description }} />

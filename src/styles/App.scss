@@ -116,6 +116,26 @@ select {
   }
 }
 
+.tags {
+  align-items: center;
+
+  p {
+    background: none;
+    border: 1px solid #59626c;
+    color: #59626c;
+  }
+}
+
+.single-details {
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 4rem;
+  margin-top: 3rem;
+
+  p {
+    margin: 1.5rem 0;
+  }
+}
+
 .card-container {
   width: 100%;
   height: auto;
@@ -136,32 +156,15 @@ select {
       margin: 2rem 0;
     }
 
-    .tags {
-      align-items: center;
-
-      p {
-        background: none;
-        border: 1px solid #59626c;
-        color: #59626c;
-      }
-    }
-
     .more-info {
-      * {
+      p li {
         font-size: 1.3rem;
-      }
-
-      p {
-        margin: 1.5rem 0;
       }
 
       h2 {
         font-size: 3rem;
       }
     }
-
-
-
 
     .company-info {
       * {
@@ -183,7 +186,6 @@ select {
     }
   }
 
-
   .last-details {
     align-items: center;
   }
@@ -194,14 +196,8 @@ select {
   }
 }
 
-.single-details {
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 4rem;
-  margin-top: 3rem;
-}
-
 .single-job-title {
-  font-size: 7rem;
+  font-size: 3rem;
 }
 
 #apply-btn {
