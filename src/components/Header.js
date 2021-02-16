@@ -1,5 +1,5 @@
 const Header = () => (
-  <nav>
+  <nav data-test="header">
     <div className="container d-flex align-center">
       <h1>Jobs Loft</h1>
       <li>

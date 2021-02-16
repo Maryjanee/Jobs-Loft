@@ -14,11 +14,12 @@ const JobTypeFilter = ({ handleFilterChange }) => {
   };
 
   return (
-    <div>
+    <div data-test="jobFilter">
       <select
         name="jobType"
         id="jobType"
         onChange={handleChange}
+        data-test="jobType"
       >
         <option value="">Select a Job Type</option>
         {jobTypes.map(jobType => (
