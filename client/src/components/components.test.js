@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/jsx-props-no-spreading  */
 
 import { shallow } from 'enzyme';
 import Header from './Header';
