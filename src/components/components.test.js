@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+
 import { shallow } from 'enzyme';
 import Header from './Header';
 import JobTypeFilter from './JobTypeFilter';
@@ -39,13 +41,13 @@ describe('JobTypeFilter Component', () => {
       component = getShallowJobTypeFilter(props);
     });
 
-    it('should render without errors', ()=>{
-        const wrapper = component.find('[data-test="jobFilter"]');
-        expect(wrapper.length).toBe(1);
-    })
-    it('should render a select dropdown', ()=>{
-        const select = component.find('[data-test="jobType"]');
-        expect(select.length).toBe(1);
-    })
+    it('should render without errors', () => {
+      const wrapper = component.find('[data-test="jobFilter"]');
+      expect(wrapper.length).toBe(1);
+    });
+    it('should render a select dropdown', () => {
+      const select = component.find('[data-test="jobType"]');
+      expect(select.length).toBe(1);
+    });
   });
 });
