@@ -5,10 +5,13 @@ import { connect } from 'react-redux';
 import { useEffect, useState } from 'react';
 import loader from '../assets/loading.svg';
 import back from '../assets/back.svg';
+import daysDiff from '../helpers/daysDiff';
+import ago from '../helpers/ago';
 
 const Job = ({ jobs, pending }) => {
   const { jobId } = useParams();
   const [job, setJob] = useState();
+  const posted = date => `${ago(daysDiff(date))}`;
 
   useEffect(() => {
     if (jobId) {
@@ -45,7 +48,7 @@ const Job = ({ jobs, pending }) => {
               </div>
               <div>
                 <p className="uppercase">Posted</p>
-                <p className="capsule">12 days ago</p>
+                <p className="capsule">{posted(job.created_at)}</p>
               </div>
             </div>
           </div>
