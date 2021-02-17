@@ -31,14 +31,4 @@ export const fetchJobs = () => async dispatch => {
     const errorMsg = error.message;
     dispatch(getJobsError(errorMsg));
   }
-  // axios
-  //   .get('/positions.json')
-  //   .then(response => {
-  //     const jobs = response.data;
-  //     dispatch(getJobsSuccess(jobs));
-  //   })
-  //   .catch(error => {
-  //     const errorMsg = error.message;
-  //     dispatch(getJobsError(errorMsg));
-  //   });
 };
