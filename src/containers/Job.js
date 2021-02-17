@@ -27,7 +27,7 @@ const Job = ({ jobs, pending }) => {
         {job && (
         <div className="single-details d-grid">
           <div className="more-info">
-            <h2 className="single-job-title">{job.title}</h2>
+            <p className="single-job-title">{job.title}</p>
             <span dangerouslySetInnerHTML={{ __html: job.description }} />
           </div>
           <div className="single-job-info">
