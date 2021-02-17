@@ -1,8 +1,8 @@
 # Jobs Loft 
 > Job Loft  is a simple application created to give software enginneering jobs seekers access to the most recent job listings.
 
- ![All Jobs Page](./client/src/assets/jobs-loft.png);
- ![Single Job Page](./client/src/assets/jobloft.png);
+ ![All Jobs Page](./src/assets/jobs-loft.png);
+ ![Single Job Page](./src/assets/jobloft.png);
  
 
 ## Live Link
