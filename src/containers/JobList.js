@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import loader from '../assets/loading.svg';
+import logo from '../assets/logo.png';
 import { filterJobTypes } from '../actions/job.action';
 import JobTypeFilter from '../components/JobTypeFilter';
 import daysDiff from '../helpers/daysDiff';
@@ -45,7 +46,9 @@ const JobList = ({
               <div className="job-details d-grid">
 
                 <div className="company-logo">
-                  <img src={job.company_logo} alt="logo" />
+                  {
+                    job.company_logo ? <img src={job.company_logo} alt="logo" /> : <img src={logo} alt="logo" />
+                  }
                 </div>
                 <div className="company-info">
                   <p className="job-title">{job.title}</p>
