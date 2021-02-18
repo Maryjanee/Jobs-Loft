@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
     `git clone https://github.com/Maryjanee/Jobs-loft.git` using your terminal or command line.
 2.  Change to the project directory by entering `cd Jobs-Loft` in the terminal
 3.  Next open run `npm i` to install necessary packages and dependencies.
-4.  Once the installation is complete run `npm start` to start the application.
+4.  Once the installation is complete run  ` npm run start:dev` and then `npm start` to start the application.
 
 
 ## Author
