@@ -8,6 +8,11 @@
 ## Live Link
    [See it live here](https://job-loft.herokuapp.com/)
 
+## Video Links
+- [Video 1](https://www.loom.com/share/a5fa216d177d4be7abc450a15a2d441e);
+- [Video 2](https://www.loom.com/share/6e1360da9b2b4805ac3f35b408209c7c);
+
+
 
 ## Built With
 

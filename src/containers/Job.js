@@ -1,5 +1,5 @@
+/* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
-
 import { useParams, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useEffect, useState } from 'react';
