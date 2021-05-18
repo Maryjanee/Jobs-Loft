@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Header = () => (
   <nav data-test="header">
     <div className="container d-flex align-center">
